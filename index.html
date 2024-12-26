@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A Traditional Chinese Medicine device providing service of diagnosis by pulse detection and tongue analysis">
-    <title>Product</title>
+    <title>Product Introduction</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -61,16 +61,40 @@
             padding: 10px;
             text-align: center;
         }
+        /* 基本的链接样式 */
+        .dynamic-underline {
+            position: relative;
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+
+        /* 伪元素实现下划线效果 */
+        .dynamic-underline::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: white;
+            transition: width 0.3s ease;
+        }
+
+        /* 鼠标悬停时，下划线宽度变为100% */
+        .dynamic-underline:hover::after {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>TCMPulse</h1>
+        <h1>Product Introduction</h1>
         <nav>
             <ul>
-                <li><a href="https://jasonhhhhhhhh.github.io/TCMpulse/">Home</a></li>
-                <li><a href="https://jasonhhhhhhhh.github.io/TCMPulse-products/">Product Introduction</a></li>
-                <li><a href="https://jasonhhhhhhhh.github.io/TCMPulse-contact/">Contact Us</a></li>
+                <li><a href="https://jasonhhhhhhhh.github.io/TCMpulse/" class="dynamic-underline">Home</a></li>
+                <li><a href="https://jasonhhhhhhhh.github.io/TCMPulse-products/" class="dynamic-underline">Product Introduction</a></li>
+                <li><a href="https://jasonhhhhhhhh.github.io/TCMPulse-contact/" class="dynamic-underline">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -78,24 +102,24 @@
     <div class="container">
         <section id="product" class="product">
             <div class="product-description">
-                <h2>Product Name</h2>
-                <p>This is our diagnosis product providing....</p>
-                <h3>Characteristics</h3>
+                <h2>TCMPulse</h2>
+                <p>A Traditional Chinese Medicine device providing service of diagnosis by pulse detection and tongue analysis</p>
+                <h3>Functions</h3>
                 <ul>
-                    <li>1.</li>
-                    <li>2.</li>
-                    <li>3.</li>
-                    <li>4.</li>
+                    <li>1.Pulse detection</li>
+                    <li>2.Facial analysis</li>
+                    <li>3.Dianosis assistancy</li>
+                    <li>4.Guidance to local TCM facility</li>
                 </ul>
             </div>
             <img src="product-image.jpg" alt="Product image">
         </section>
 
         <section id="contact">
-            <h2>Contact US</h2>
-            <p>If you're interested in our product, please contact us</p>
-            <p>Email: contact@example.com</p>
-            <p>Phone number: 123-456-7890</p>
+            <h2>Data Information</h2>
+            <p>1.</p>
+            <p>2.</p>
+            <p>3.</p>
         </section>
     </div>
 
